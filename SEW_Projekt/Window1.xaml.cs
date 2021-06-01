@@ -10,24 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SEW_Projekt
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für Window1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window1 : Window
     {
-        public MainWindow()
+        public Window1()
         {
-
-            var rand = new Random();
-            Adresse a1 = new Adresse("Währinger Straße", "112", "Wien", "1180", "Österreich");
-            Kunde k1 = new Kunde("Maximilian", "Schuller", Convert.ToString(rand.Next(1000,10000)),"Passwort", DateTime.Now, a1);
             InitializeComponent();
         }
     }
-
 }

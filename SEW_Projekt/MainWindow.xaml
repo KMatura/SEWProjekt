@@ -5,6 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SEW_Projekt"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid/>
+        Title="Login" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="65" Margin="363,128,0,0" VerticalAlignment="Top" Width="120">
+            <TextBox HorizontalAlignment="Left" Height="25"  Margin="0,0,-20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox HorizontalAlignment="Left" Height="25" Margin="0,15,-20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="65" Margin="242,128,0,0" VerticalAlignment="Top" Width="100">
+            <Label Content="Verfüger:" Height="25" Margin="0,0,0,0" HorizontalAlignment="Right"/>
+            <Label Content="Kennwort:" Height="25" Margin="0,15,0,0" HorizontalAlignment="Right"/>
+        </StackPanel>
+        <Button Content="Anmelden" Margin="408,222,310.6,176"/>
+        <DockPanel HorizontalAlignment="Left" Height="25" LastChildFill="False" VerticalAlignment="Top" Width="291" Margin="30,370,0,0">
+            <Label Content="Noch kein Kunde? Jetzt Registrieren -&gt;" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="220" DockPanel.Dock="Left"/>
+            <Button Content="Registrieren" Height="25" Width="70" VerticalAlignment="Top" DockPanel.Dock="Left"/>
+        </DockPanel>
+    </Grid>
 </Window>
