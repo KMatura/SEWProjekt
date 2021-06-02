@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
+using Newtonsoft.Json;
+
 
 namespace SEW_Projekt
 {
@@ -27,6 +30,20 @@ namespace SEW_Projekt
             Adresse a1 = new Adresse("Währinger Straße", "112", "Wien", "1180", "Österreich");
             Kunde k1 = new Kunde("Maximilian", "Schuller", Convert.ToString(rand.Next(1000,10000)),"Passwort", DateTime.Now, a1);
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 fenster = new Window1();
+            fenster.ShowDialog();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string path = @"../../../Kundendaten.txt";
+            string jsonText = File.ReadAllText(path);
+            Kunde jsonKunde = JsonConvert.DeserializeObject<Kunde>(jsonText);
+
         }
     }
 

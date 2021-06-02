@@ -1,0 +1,4 @@
+{"Vorname":null,"Nachname":null,"Verfuegernummer":null,"Kennwort":null,"Geburtsdatum":"0001-01-01T00:00:00","Adresse":null}
+{"Vorname":null,"Nachname":null,"Verfuegernummer":null,"Kennwort":null,"Geburtsdatum":"0001-01-01T00:00:00","Adresse":null}
+{"Vorname":null,"Nachname":null,"Verfuegernummer":null,"Kennwort":null,"Geburtsdatum":"0001-01-01T00:00:00","Adresse":null}
+{"Vorname":null,"Nachname":null,"Verfuegernummer":null,"Kennwort":null,"Geburtsdatum":"0001-01-01T00:00:00","Adresse":null}

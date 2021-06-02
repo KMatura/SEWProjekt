@@ -14,8 +14,14 @@ namespace SEW_Projekt
         public string Kennwort { get; set; }
         public DateTime Geburtsdatum { get; set; }
         public Adresse Adresse { get; set; }
-        public Kunde(string vorname, string nachname, string verfuegernummer, string Kennwort, DateTime geburtsdatum, Adresse adresse)
+        public Kunde(string vorname, string nachname, string verfuegernummer, string kennwort, DateTime geburtsdatum, Adresse adresse)
         {
+            this.Vorname = vorname;
+            this.Nachname = nachname;
+            this.Verfuegernummer = verfuegernummer;
+            this.Kennwort = kennwort;
+            this.Geburtsdatum = geburtsdatum;
+            this.Adresse = adresse;
         }
     }
 }

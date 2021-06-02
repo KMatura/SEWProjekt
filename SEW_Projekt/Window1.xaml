@@ -5,9 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SEW_Projekt"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="Registrierung" Height="450" Width="800">
     <Grid>
-        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="272,137,0,0"/>
+        <StackPanel Orientation="Horizontal" Margin="80,105,412.6,85">
+            <StackPanel HorizontalAlignment="Left" Width="105" Margin="0,0,0,11.2">
+                <Label Content="Vorname" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="25" Width="105"/>
+                <Label Content="Nachname" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="25" Width="105"/>
+                <Label Content="Verfuegernummer" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="25" Width="105"/>
+                <Label Content="Kennwort" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="25" Width="105"/>
+                <Label Content="Geburtsdatum" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="25" Width="105"/>
+                <Label Content="Telefonnummer" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="25" Width="105"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="210" Margin="50,0,0,12.6" Width="120">
+                <TextBox x:Name="TextBox_Vorname" HorizontalAlignment="Left" Height="25" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="TextBox_Nachname" HorizontalAlignment="Left" Height="25" Margin="0,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="TextBox_Verfuegernr" HorizontalAlignment="Left" Height="25" Margin="0,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="TextBox_Kennwort" HorizontalAlignment="Left" Height="25" Margin="0,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <DatePicker x:Name="DatePicker_geb" Margin="0,10,0,0" Height="25"/>
+                <TextBox x:Name="TextBox_Telefonnummer" Margin="0,10,0,0" HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            </StackPanel>
+        </StackPanel>
+        <Button Content="Registrieren" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="675,361,0,0" Click="Button_Click"/>
+        <StackPanel Orientation="Horizontal" Margin="449,105,43.6,104">
+            <StackPanel HorizontalAlignment="Left" Height="165" Width="105" Margin="0,0,0,11.2">
+                <Label Content="Straße" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="25" Width="105"/>
+                <Label Content="Hausnummer" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="25" Width="105"/>
+                <Label Content="Stadt" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="25" Width="105"/>
+                <Label Content="Postleitzahl" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="25" Width="105"/>
+                <Label Content="Land" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="25" Width="105"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="165" Margin="50,0,0,11.2" Width="120">
+                <TextBox x:Name="TextBox_Strasse" HorizontalAlignment="Left" Height="25" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="TextBox_Hausnummer" HorizontalAlignment="Left" Height="25" Margin="0,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="TextBox_Stadt" HorizontalAlignment="Left" Height="25" Margin="0,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="TextBox_PLZ" HorizontalAlignment="Left" Height="25" Margin="0,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="TextBox_Land" Margin="0,10,0,0" HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            </StackPanel>
+        </StackPanel>
+        <Label Content="Personendaten" HorizontalAlignment="Left" Margin="80,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="Adressdaten" HorizontalAlignment="Left" Margin="458,47,0,0" VerticalAlignment="Top"/>
+
 
     </Grid>
 </Window>
