@@ -40,10 +40,22 @@ namespace SEW_Projekt
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            string path = @"../../../Kundendaten.txt";
+            string path = @"../../../Kundendaten.json";
             string jsonText = File.ReadAllText(path);
-            Kunde jsonKunde = JsonConvert.DeserializeObject<Kunde>(jsonText);
-
+            List<Kunde> jsonKunde = JsonSerializer.Deserialize(jsonText);
+            foreach (var item in jsonKunde)
+            {
+                if (item.Verfuegernummer == TextBox_verfueger.Text)
+                {
+                    if (item.Kennwort == TextBox_Kennwort.Text)
+                    {
+                        TextBox_verfueger.Clear();
+                        TextBox_Kennwort.Clear();
+                        Window2 bankingfenster = new Window2();
+                        bankingfenster.Show();
+                    }
+                }
+            }
         }
     }
 

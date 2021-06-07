@@ -13,7 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Text.Json;
 using System.IO;
-using Newtonsoft.Json;
 
 
 namespace SEW_Projekt
@@ -28,15 +27,17 @@ namespace SEW_Projekt
             InitializeComponent();
         }
 
+        List<Kunde> kunden = new List<Kunde>();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string path = @"../../../Kundendaten.txt";
+            string path = @"../../../Kundendaten.json";
             Random r = new Random();
             string randnum = Convert.ToString(r.Next(1000,10000));
             Adresse adresse= new Adresse(TextBox_Strasse.Text, TextBox_Hausnummer.Text, TextBox_Stadt.Text, TextBox_PLZ.Text, TextBox_Land.Text);
             Kunde kunde = new Kunde(TextBox_Vorname.Text, TextBox_Nachname.Text, Convert.ToString(TextBox_Verfuegernr.Text), TextBox_Kennwort.Text, DatePicker_geb.SelectedDate.Value, adresse);
             Konto konto = new Konto(randnum, kunde, 0, DateTime.Now);
-            string jsonsString = System.Text.Json.JsonSerializer.Serialize(kunde);
+            kunden.Add(kunde);
+            string jsonsString = JsonSerializer.Serialize(kunden);
             File.AppendAllText(path, jsonsString);
             this.Close();
         }

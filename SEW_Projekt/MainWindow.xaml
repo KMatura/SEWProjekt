@@ -8,8 +8,8 @@
         Title="Login" Height="450" Width="800">
     <Grid>
         <StackPanel HorizontalAlignment="Left" Height="65" Margin="363,128,0,0" VerticalAlignment="Top" Width="120">
-            <TextBox HorizontalAlignment="Left" Height="25"  Margin="0,0,-20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox HorizontalAlignment="Left" Height="25" Margin="0,15,-20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="TextBox_verfueger" HorizontalAlignment="Left" Height="25"  Margin="0,0,-20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="TextBox_Kennwort" HorizontalAlignment="Left" Height="25" Margin="0,15,-20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="65" Margin="242,128,0,0" VerticalAlignment="Top" Width="100">
             <Label Content="Verfüger:" Height="25" Margin="0,0,0,0" HorizontalAlignment="Right"/>
