@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Text.Json;
 using System.IO;
-
+using Newtonsoft.Json;
 
 namespace SEW_Projekt
 {
@@ -37,7 +37,7 @@ namespace SEW_Projekt
             Kunde kunde = new Kunde(TextBox_Vorname.Text, TextBox_Nachname.Text, Convert.ToString(TextBox_Verfuegernr.Text), TextBox_Kennwort.Text, DatePicker_geb.SelectedDate.Value, adresse);
             Konto konto = new Konto(randnum, kunde, 0, DateTime.Now);
             kunden.Add(kunde);
-            string jsonsString = JsonSerializer.Serialize(kunden);
+            string jsonsString = JsonConvert.SerializeObject(kunden, Formatting.Indented);
             File.AppendAllText(path, jsonsString);
             this.Close();
         }

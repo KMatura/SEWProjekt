@@ -42,8 +42,8 @@ namespace SEW_Projekt
         {
             string path = @"../../../Kundendaten.json";
             string jsonText = File.ReadAllText(path);
-            List<Kunde> jsonKunde = JsonSerializer.Deserialize(jsonText);
-            foreach (var item in jsonKunde)
+            //List<Kunde> jsonKunde = JsonSerializer.Deserialize(jsonText);
+            /*foreach (var item in jsonKunde)
             {
                 if (item.Verfuegernummer == TextBox_verfueger.Text)
                 {
@@ -55,7 +55,7 @@ namespace SEW_Projekt
                         bankingfenster.Show();
                     }
                 }
-            }
+            }*/
         }
     }
 

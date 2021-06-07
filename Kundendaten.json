@@ -1,1 +1,31 @@
-{"Vorname":"Kristof","Nachname":"Matura","Verfuegernummer":"1234","Kennwort":"kennwort","Geburtsdatum":"2021-06-03T00:00:00","Adresse":{"Stra\u00DFe":"Stra\u00DFenstra\u00DFe","Hausnummer":"7","Stadt":"Wien","PLZ":"1160","Land":"\u00D6sterreich"}}{"Vorname":"Maximilian ","Nachname":"Schuller","Verfuegernummer":"1111","Kennwort":"kennwort","Geburtsdatum":"2004-05-13T00:00:00","Adresse":{"Stra\u00DFe":"Penzing","Hausnummer":"12","Stadt":"Wien","PLZ":"1140","Land":"\u00D6sterreich"}}
+[
+  {
+    "Vorname": "1",
+    "Nachname": "1",
+    "Verfuegernummer": "1",
+    "Kennwort": "1",
+    "Geburtsdatum": "2021-06-03T00:00:00",
+    "Adresse": {
+      "Straße": "1",
+      "Hausnummer": "1",
+      "Stadt": "1",
+      "PLZ": "1",
+      "Land": "1"
+    }
+  }
+][
+  {
+    "Vorname": "2",
+    "Nachname": "2",
+    "Verfuegernummer": "2",
+    "Kennwort": "2",
+    "Geburtsdatum": "2021-06-12T00:00:00",
+    "Adresse": {
+      "Straße": "2",
+      "Hausnummer": "2",
+      "Stadt": "2",
+      "PLZ": "2",
+      "Land": "2"
+    }
+  }
+]

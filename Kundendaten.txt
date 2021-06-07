@@ -1,1 +1,0 @@
-{"Vorname":"Maximilian ","Nachname":"Schuller","Verfuegernummer":"1111","Kennwort":"kennwort","Geburtsdatum":"2021-06-03T00:00:00","Adresse":{"Stra\u00DFe":"Hof","Hausnummer":"7","Stadt":"Wien","PLZ":"1140","Land":"\u00D6sterreich"}}
